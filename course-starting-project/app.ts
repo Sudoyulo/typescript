@@ -9,12 +9,17 @@
 // }
 //do this for tuples.
 
-const person = {
+const person: {
+  name: "max";
+  age: 30;
+  hobbies: string[];
+  role: [number, string]; //tuple declaration
+} = {
   name: "max",
   age: 30,
   hobbies: ["sports", "cooking"],
-  role: [2, "author"] //tuple
-}
+  role: [2, "author"], //tuple
+};
 
 person.role.push("admin"); //doesnt know its a tuple
 person.role[1] = 10; //breaking the tuple
