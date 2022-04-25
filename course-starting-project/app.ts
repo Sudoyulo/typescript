@@ -13,4 +13,7 @@ const person = {
   hobbies: ["spots", "cooking"]
 }
 
+let favAct: string[];
+favAct = "sports";
+
 console.log(person.name);
