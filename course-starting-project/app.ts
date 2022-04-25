@@ -14,6 +14,6 @@ const person = {
 }
 
 let favAct: string[];
-favAct = "sports";
+favAct = ["sports", 1];
 
 console.log(person.name);
