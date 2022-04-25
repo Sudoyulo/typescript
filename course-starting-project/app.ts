@@ -10,10 +10,14 @@
 const person = {
   name: "max",
   age: 30,
-  hobbies: ["spots", "cooking"]
+  hobbies: ["sports", "cooking"]
 }
 
-let favAct: any[]; //waste of ts
-favAct = ["sports", 1];
+let favAct: string[];
+favAct = ["sports"];
 
 console.log(person.name);
+
+for (const hobby of person.hobbies) {
+  console.log(hobby.toUpperCase());
+}
