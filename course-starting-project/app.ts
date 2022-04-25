@@ -21,8 +21,9 @@ const person: {
   role: [2, "author"], //tuple
 };
 
-person.role.push("admin"); //doesnt know its a tuple
-person.role[1] = 10; //breaking the tuple
+// person.role.push("admin"); //ts cant catch push
+// person.role[1] = 10; //ts can catch change
+// person.role = [0, "admin", "user"]; //triple doesnt work
 
 let favAct: string[];
 favAct = ["sports"];
