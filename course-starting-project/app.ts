@@ -13,7 +13,7 @@ const person = {
   hobbies: ["spots", "cooking"]
 }
 
-let favAct: string[];
+let favAct: any[]; //waste of ts
 favAct = ["sports", 1];
 
 console.log(person.name);
