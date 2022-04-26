@@ -25,10 +25,10 @@
 // const READ_ONLY = 1;
 
 enum Role {
-  ADMIN = 5,
-  READ_ONLY = 100, //6
-  AUTHOR = 45, //7
-} //enum 0,1,2
+  ADMIN = 5, //5
+  READ_ONLY, //6
+  AUTHOR, //7
+} //custom enum 0,1,2
 
 const person = {
   name: "max",
@@ -44,7 +44,7 @@ const person = {
 let favAct: string[];
 favAct = ["sports"];
 
-console.log(person.name);
+console.log(person.role); //role prints 5
 
 // for (const hobby of person.hobbies) {
 //   console.log(hobby.map());
