@@ -1,12 +1,12 @@
 function combine(
   input1: number | string,
   input2: number | string,
-  resultConversion: "as-number" | "as-text"
+  resultConversion: "as-number" | "as-text" //union and literal
 ) {
   let result;
 
   if (
-    (typeof input1 === "number" && typeof input2 === "number") ||
+    (typeof input1 === "number" && typeof input2 === "numbr") ||
     resultConversion === "as-number"
   ) {
     result = +input1 + +input2;
