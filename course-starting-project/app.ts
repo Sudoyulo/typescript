@@ -9,8 +9,9 @@ function printResult(num: number) {
 
 printResult(add(5, 12));
 
-let combinedValues;
+let combinedValues: Function;
 
 combinedValues = add; //stored a pointer to a function
+combinedValues = 5;
 
 console.log(combinedValues(8, 8));
