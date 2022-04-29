@@ -1,12 +1,14 @@
+type Combinable = number;
+
 function combine(
-  input1: number | string,
+  input1: Combinable | string,
   input2: number | string,
   resultConversion: "as-number" | "as-text" //union and literal
 ) {
   let result;
 
   if (
-    (typeof input1 === "number" && typeof input2 === "numbr") ||
+    (typeof input1 === "number" && typeof input2 === "number") ||
     resultConversion === "as-number"
   ) {
     result = +input1 + +input2;
