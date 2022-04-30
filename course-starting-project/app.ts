@@ -1,5 +1,5 @@
-let userInput: unknown;
-let userName: string;
+let userInput: unknown; //better than any but not as good as union
+let userName: string; //fixed type
 
 userInput = 5;
 userInput = "max";
@@ -7,3 +7,9 @@ userInput = "max";
 if (typeof userInput === "string") {
   userName = userInput;
 }
+
+function generateError(message: string, code: number) {
+  throw { message: message, errorCode: code };
+}
+
+generateError("an error occured!", 500);
