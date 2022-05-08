@@ -17,8 +17,12 @@ age = 32;
 // }
 // console.log(isOld);
 
-const add = (a: number, b: number) => {
-  return a + b;
-};
+const add = (a: number, b: number) => a + b;
 
 console.log(add(2, 3));
+
+const printOutput = (output: string | number) => {
+  console.log(output);
+};
+
+printOutput(add(5, 2));
