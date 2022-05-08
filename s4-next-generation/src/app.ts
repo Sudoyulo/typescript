@@ -21,8 +21,6 @@ const add = (a: number, b: number) => a + b;
 
 console.log(add(2, 3));
 
-const printOutput = (output: string | number) => {
-  console.log(output);
-};
+const printOutput: (a: number | string) => void = (output) => console.log(output);
 
 printOutput(add(5, 2));
