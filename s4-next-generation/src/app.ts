@@ -33,7 +33,7 @@ if (button) {
 printOutput(add(5));
 
 const hobbies = ["Sports", "Cooking"];
-const activeHobbies = ["hiking"];
+const activeHobbies = ["hiking", ...hobbies];
 
 activeHobbies.push(...hobbies);
 
