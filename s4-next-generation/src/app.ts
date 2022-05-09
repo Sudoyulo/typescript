@@ -38,3 +38,12 @@ const activeHobbies = ["hiking", ...hobbies];
 activeHobbies.push(...hobbies);
 
 console.log(activeHobbies);
+
+const person = {
+  name: "kev",
+  age: 32,
+};
+
+const copiedPerson = { ...person };
+
+console.log(copiedPerson);

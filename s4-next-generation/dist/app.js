@@ -16,4 +16,10 @@ const hobbies = ["Sports", "Cooking"];
 const activeHobbies = ["hiking", ...hobbies];
 activeHobbies.push(...hobbies);
 console.log(activeHobbies);
+const person = {
+    name: "kev",
+    age: 32,
+};
+const copiedPerson = Object.assign({}, person);
+console.log(copiedPerson);
 //# sourceMappingURL=app.js.map
