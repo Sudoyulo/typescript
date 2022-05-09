@@ -11,5 +11,5 @@ if (button) {
         console.log(event);
     });
 }
-printOutput(add(5, 2));
+printOutput(add(5));
 //# sourceMappingURL=app.js.map

@@ -30,4 +30,4 @@ if (button) {
   });
 }
 
-printOutput(add(5, 2));
+printOutput(add(5));
