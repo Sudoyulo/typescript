@@ -2,7 +2,7 @@
 const userName = "kev";
 let age = 31;
 age = 32;
-const add = (a, b) => a + b;
+const add = (a, b = 1) => a + b;
 console.log(add(2, 3));
 const printOutput = (output) => console.log(output);
 const button = document.querySelector("button");
